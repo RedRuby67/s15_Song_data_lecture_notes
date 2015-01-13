@@ -1,1 +1,5 @@
-# s15_Song_data_lecture_notes
+# Lecture Notes for Data Engineering Spring 2014
+
+## Lecture 1
+
+Here is where we take notes
