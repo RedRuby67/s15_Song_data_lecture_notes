@@ -38,7 +38,7 @@ Start -> Get/Post/Put/Delete -> HTTP Server
 
 Go to https://github.com/cu-data-engineering-s15/syllabus -> wiki
 
-Markdown presentation:
+__Markdown presentation:__
 
 Markdown is a plain text formatting that converts easily to HTML
 
@@ -58,8 +58,49 @@ Tables - create with pipes ie. |, dashes ie. -
 
 Horizontal lines - create with triple hyphens, astericks, underscores
 
-Services:
+__Services:__
+
+REST - Representation State Transfer
+
+    Resources - URI
+    CRUD (Create, Read, Update, Destroy
+    
+
+__Given /users :__
+
+Get - Read
+
+Post - creates {data}
+
+Put - update
+
+Delete - destroy
+
+__Simple Example:__
 
 ```
+require 'sinatra'
+require 'sinatra/reloader' if development?
+
+require 'json'
+
+configure do
+  set :port, 3000
+end
+
+get '/api/1.0/whattimeisit' do
+  {status: true, message: Time.now}.tojson + "\n"
+end
+```
+
+__More Complicated Example:__
+
+```
+require 'json'
+require 'time'
+
+class Contact
+
+  attr_reader :id, :name, :birthdate, :email, :phone, :twitter 
 
 ```
