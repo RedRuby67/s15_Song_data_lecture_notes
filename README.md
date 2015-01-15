@@ -34,3 +34,32 @@ Request Response Cycle:
 
 Start -> Get/Post/Put/Delete -> HTTP Server
 
+## Lecture 2
+
+Go to https://github.com/cu-data-engineering-s15/syllabus -> wiki
+
+Markdown presentation:
+
+Markdown is a plain text formatting that converts easily to HTML
+
+Types of Markdown: Standard Markdown (SM) and Github Flavored Markdown (GFM)
+
+What can you do with it? Styling, word formatting, add images, create lists, links, code blocks
+
+Headers - created with the '#' symbol
+
+Bold/Italics - use "-" symbol
+
+Links - created with square brackets and parenthesis
+
+Code blocks - create with " ``` code ``` "
+
+Tables - create with pipes ie. |, dashes ie. -
+
+Horizontal lines - create with triple hyphens, astericks, underscores
+
+Services:
+
+```
+
+```
