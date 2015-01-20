@@ -104,3 +104,53 @@ class Contact
   attr_reader :id, :name, :birthdate, :email, :phone, :twitter 
 
 ```
+
+## Lecture 3
+
+Restful Web Services
+
+__Rest__
+
+REST- architectural web service style (inventor: Roy Fielding)
+
+Approach to developing web services tha mimic design of Web itself
+
+Service provides access to linked set of resources
+
+Operations: CRUD (Create, Read, Update, Delete)
+
+```
+Example:
+GET /api/1.0/users     Retrieves list of users
+GET /api/1.0/users/0   Retrieves details of user0
+POST /api/1.0/users    Creates new user
+
+PUT /api/1.0/users/0   Update user0
+DELETE /api/1.0/users/0 Delete user0
+GET /api/1.0/search?q=tattersall   Performs a search with the query tattersail
+```
+
+Each operation may produce a result (JSON format is KING)
+
+POST and PUT methods typically send data
+
+__Dealing with accessing shared resources__
+```
+One approach:
+GET /api/1.0/posts/0/comments/1  Gets first coment on post0
+POST /api/1.0/posts/0/comments   Creates a new comment n ost0
+```
+
+Alternative approach: While performing an operation on one resource, you reference other resources in the data that is sent with the request.
+
+__Issues__
+
+Security, Identity, Failure, Persistence
+
+__Example__
+
+Contacts Web Servce
+
+Implemented in Ruby and Javascript
+
+Technologies used: Sinatra, Rspec, Typhoeus, Node, Express
