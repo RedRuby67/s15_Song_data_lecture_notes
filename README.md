@@ -156,3 +156,41 @@ Implemented in Ruby and Javascript
 Technologies used: Sinatra, Rspec, Typhoeus, Node, Express
 
 Goto: https://github.com/cu-data-engineering-s15/contacts
+
+## Lecture 4
+
+__Git Presentations__
+
+Initialization: git init - starts a git repo in current directory whith no files currently tracked
+
+Clone: git clone remote_repository_address - creates a new git repo in current directory that is copy of current
+
+Branching: git branch, git branch new_branch_name (create), git branch -d new_branch_name (delete), git checkout branch_name (change to branch), git checkout commit 
+
+Add: git add file
+
+Commit: git commit -m "Commit Message" - "-m" flag is optional
+
+Merge: git merge branch_name - merges named branch
+
+Pull: git pull [remote_repository] [branch_name]
+
+Push: git push [remote_repository]
+
+Other cool things: log (commit history), remote (setup remote knowledge of remote repos), stash (shelving), rebase (change how branches are related), diff (show differences between commits), fetch (get changes but does not integrate), reset (move to current head), tag (mark git objects), mv (moves files), rm (stops tracking changes to file)
+
+__Github Presentation__
+
+Fork - exact copy of repo, use to run experiments without risk  of messing things up
+
+Github workflow: Branch your commit, Submit a pull request, Re-merge with feedback
+
+Demo: https://github.com/Zandrr/pull_requests_demo
+
+>git checkout -b "new-branch-bug-fix"
+
+make changes >git
+
+>git add README.md
+
+>git commit -m "updated readme"
