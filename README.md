@@ -194,3 +194,55 @@ make changes >git
 >git add README.md
 
 >git commit -m "updated readme"
+
+## Lecture 5
+
+__Node.js__
+
+Node.js - service site for executing javascript
+
+Hello World:
+
+```
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');
+```
+
+Basic Structure:
+
+```
+while (there are events to handle) {
+  event
+  }
+```
+
+Callback hell - situation where callbacks are indented, this makes code hard to read, Delays in callbacks
+
+Problems with synchronicity
+
+Two ways to solve problem:
+
+1. Use synchronous functions
+2. Use named callback functions
+
+__Node Execution Model__
+
+Node is single-threaded!
+
+Any written code is guaranteed to be synchronous
+
+No need to worry about race conditions
+
+IO is handled in parallel
+
+If you issue an asynchronous call for IO:
+
+    Callback is registered
+    IO call is executed in separate thread
+        immediately blocks because it is an IO call
+  
+Makes it easy to implement services that run server-side
