@@ -246,3 +246,31 @@ If you issue an asynchronous call for IO:
         immediately blocks because it is an IO call
   
 Makes it easy to implement services that run server-side
+
+## Lecture 6
+
+__Express__
+
+Web app framework written in Javascript for use in Node.js
+
+Design influenced by Sinatra
+
+Makes it easy to define endpoints of web-based service
+
+Includes feautures to create website
+
+Minimum framework - designed to be augmented by node packs
+
+Create Directory - cd into directory and run 'npm init'
+
+Install express: npm install --save express
+
+Install middleware: npm install --save body-parser
+                    nmp install --save morgan
+                    
+See what nmp installed: npm list
+
+Creating Test.json: start with Get request
+
+Creating a module: install moment --save, mkdir lib, cd lib, vi time.js
+
