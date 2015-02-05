@@ -384,3 +384,9 @@ this.age = 22 // public var
 * 
 Sidenote: Angular is client side - mvc all in client (server plays support role, html stored in server/services), whereas in Rails mvc is in server side.
 
+
+## Lecture 8
+
+### More Angular JS
+
+Demonstration with html files.
