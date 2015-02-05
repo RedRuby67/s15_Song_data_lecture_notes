@@ -378,12 +378,6 @@ this.age = 22 // public var
 </html>
 ```
 
-#### Directive examples:
-* ng-show: display an HTML element if condition is true
-* ng-hide: hide an HTML element
-* 
-Sidenote: Angular is client side - mvc all in client (server plays support role, html stored in server/services), whereas in Rails mvc is in server side.
-
 
 ## Lecture 8
 
