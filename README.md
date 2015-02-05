@@ -274,3 +274,113 @@ Creating Test.json: start with Get request
 
 Creating a module: install moment --save, mkdir lib, cd lib, vi time.js
 
+## Lecture 7
+
+### AngularJS
+* client side web application framework
+* written in Javascript
+* compatibility with JSON RESTful services.
+
+### Core Concepts
+* Data bindings
+	* Html tag is associated with model object and automatically updates
+* Controllers
+	* Define all states/methods, Modulize and decompose data
+* Services
+  * Services remember things that controllers may leave behind when they return multiple times
+		* i.e. login controller
+* Directives
+	* Allow angular to integrate into HTML in a natural way
+	* They can also be used to create reusable components that combine controllers, data, and HTML
+* Embeddable
+	* Anuglar can control as much or as littel of a web page as you specify
+	* Provides control over web page, easy to add new functinality
+
+```javascript
+Public class Employee
+Public Employee(Database d) 
+// employee needs  a database to exist, 
+// injectable -> finds a database for you without you needing to set up database connections, etc.
+// Spring framework is an example of this that gives you dependency injections
+```
+
+#### Modules
+* Module is the primary way to package upa  set of controllers into an Angular application
+* To Create a module: give name and list dependencies
+``` javascript
+angular.module('contactsApp', [])
+```
+* Creates a module called contactsApp; with no dependencies
+```javascript
+angular.module('contactsApp')
+```
+* When you created a module, you can gain a handle to it by calling angular.module
+* When you have defined a module yo ucan tell angular where it lives in the html like this:
+```javascript
+<html ng-app="contactsApp">
+</html>
+```
+
+#### Controllers
+* To do something in angular, you need a controller.
+* Declared using controller function:
+```javascript
+angular.module('contactsApp').controller('MainController', [<dependencies and code>])
+```
+* second param is an array that allows controller to declare its dependencies
+```javascript
+angular.module('contactsApp').controller('MainController', [function() {
+  var self    = this;
+  self.name   = "Ken Anderson";
+  self.update = function() {
+    self.name = "Kenneth M. Anderson";
+  };
+}]);
+```
+* Anything defined on <i>this</i> is available to the HTML that makes use of the controller.
+</br>
+* here is an example of using dependencies
+```javascript
+<MODULE>.controller('MainController', ['$http', function($http) {
+  var self    = this;
+  self.name   = "Ken Anderson";
+  self.update = function() {
+    return $http.get('/api/1.0/update_name').then(function(response) { 
+      self.name = response.data.new_name;
+      return response;
+    });
+  };
+}]);
+```
+* Create a controller that requires use of ANgulars build-in http module.
+* Event lifecycle
+	* http get -> returns a promise
+	* pass a function, gives a response.
+	* inside function do what you want with the response
+	* can chain these things... i.e. .then().then()....
+```javascript
+var age = 22 // private var
+this.age = 22 // public var
+```
+#### AngularJS Hello World
+
+```javascript
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body ng-app>
+    <h1>Hello {{name}}</h1>
+    <input type="text" ng-model="name" placeholder="First Name">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+  </body>
+</html>
+```
+
+#### Directive examples:
+* ng-show: display an HTML element if condition is true
+* ng-hide: hide an HTML element
+* 
+Sidenote: Angular is client side - mvc all in client (server plays support role, html stored in server/services), whereas in Rails mvc is in server side.
+
