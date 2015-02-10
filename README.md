@@ -384,3 +384,10 @@ this.age = 22 // public var
 ### More Angular JS
 
 Demonstration with html files.
+
+
+## Lecture 9
+
+### Getting Data from Twitter
+
+Go to contacts_web_app for example code
