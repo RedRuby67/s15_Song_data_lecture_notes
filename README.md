@@ -386,8 +386,25 @@ this.age = 22 // public var
 Demonstration with html files.
 
 
+
 ## Lecture 9
 
 ### Getting Data from Twitter
 
 Go to contacts_web_app for example code
+
+
+## Lecture 10
+
+### Getting Data from Twitter
+
+Prerequisites: Need ruby, gem
+
+### Consumer keys and Access tokens
+
+consumer key: identifies app
+
+accesss tokens: identifies user
+
+Goto: https://github.com/cu-data-engineering-s15/get_tweets
+
