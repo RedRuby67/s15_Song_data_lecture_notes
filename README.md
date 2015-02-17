@@ -408,3 +408,72 @@ accesss tokens: identifies user
 
 Goto: https://github.com/cu-data-engineering-s15/get_tweets
 
+
+## Lecture 11
+
+### Twitter Data Collection Framework
+
+#### Contracts
+
+Statically-typed language - (like java) uses interfaces
+
+Dynamically-typed language - (like ruby) improvise with method
+
+```
+def url
+  raise NotImplementedError, "No URL Specified for the Request"
+end
+```
+
+Subclasses provide implementations of: url, request_name, twitter_endpoint, success
+
+Subclasses may provide implementations for error, authorization, options, make_request, collect
+
+#### Logging
+
+Consists of custom class def and method to create default logger
+
+Created in TwitterRequest's constructor:
+
+```
+@log = args[:log] || default_logger
+```
+
+Accessed via log attribute:
+
+```
+log.info("REQUESTING: #{request.base_url}?#{display_params}")
+```
+
+#### Rates
+
+Automatically keeps track of rate imits for Twitter endpoint
+
+Blocks call and sleeps until current Twitter window is done
+
+make_request: ensures rates are checked on each request
+
+```
+def make_request
+  check_rates
+  request = Typhoeus::Request.new(url, options)
+  log.info("REQUESTING: #{request.base_url}?#{display_params}")
+  response = request.run
+  @rate_count = @rate_count - 1
+  response
+end
+```
+
+### Types of Requests
+
+MaxIdRequest, CursorRequest, StreamingRequest
+
+__MaxIdRequest__: subclass for endpooints to traverse timelines with max_id parameter
+
+Defines new contract with: init_condition, condition, update_condition
+
+__CursorRequest__: does not need to define contract for subclasses, but can implement functinality directly
+
+__StreamingRequest__: collect designed to run forever
+
+handlers - on_headers, on_body, on_complete
