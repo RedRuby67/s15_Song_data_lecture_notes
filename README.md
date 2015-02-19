@@ -477,3 +477,72 @@ __CursorRequest__: does not need to define contract for subclasses, but can impl
 __StreamingRequest__: collect designed to run forever
 
 handlers - on_headers, on_body, on_complete
+
+
+## Lecture 12
+
+### Intro to NoSQL
+
+NoSQL databases aer AWARE of their distributed nature
+
+They manage sharding and replication for you and are horizontally scalable
+
+NoSQL databases tend to avoid mutable data
+
+NoSQL databases are fault tolerant
+
+### Types of NoSQL Databases
+
+Key-Value, Graphs, Columnar, Documents
+
+__Key-Value Stores__
+
+Just like a hash table, values are untyped
+
+Benefits: Simple
+
+__Graph Stores__
+
+Optimized to store and traverse graph structures
+
+Provide structural query language to locate info based on data structure
+
+__Columnar Stores__
+
+Able to store enormous amounts of data and achieve very fast writes while also reading efficiently
+
+Distributed hash table that is easy to partition across nodes of cluster
+
+
+__Document Stores__
+
+Similar to key-value but with more structure
+
+Each document gets indexed in various ways and can be grouped into collections, which are grouped into databases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
