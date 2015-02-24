@@ -521,6 +521,49 @@ Similar to key-value but with more structure
 Each document gets indexed in various ways and can be grouped into collections, which are grouped into databases
 
 
+## Lecture 13
+
+### CouchDB
+
+__Document Database__
+
+Document NoSQL Database
+
+Implemented in Erlang
+
+Embraces the web
+
+__Document Model__
+
+self-contained data
+
+stores documents, which contain everything that might be needed by an app that uses it
+
+No schema is enforced
+
+__CAP Theorem__
+
+When designing a distributed data store, there are issues you must confront as soon as your system has more than one running server
+
+Issues: Consistency, Availability, Partial Tolerances
+
+CAP theorem: PICK ANY TWO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
