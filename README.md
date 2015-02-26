@@ -549,9 +549,47 @@ Issues: Consistency, Availability, Partial Tolerances
 
 CAP theorem: PICK ANY TWO
 
+## Lecture 14
 
+### MongoDB
 
+__Consistency and Transactions__
 
+CAP theorem: Consistency and availability compete with one another
+
+__Terminology__
+
+document - basic unit of data
+
+collection - table with dynamic schema
+
+__Documents__
+
+Case sensitive and type sensitive
+
+Cannot contain duplicate keys
+
+__Collections__
+
+group of documents
+
+names can be of any UTF- string, but cannot be empty string, have null character, statrt with System, or have '$' character
+
+__Databases__
+
+Reserved database names: Admin, Local, Config
+
+__When to use MongoDB?__
+
+Medicat records, other large document systems
+
+read heavy environments like analytics and mining
+
+partnered with relational databases
+
+__Install MongoDB on Windows__
+
+Go to: https://www.mongodb.org/downloads
 
 
 
