@@ -415,6 +415,10 @@ Goto: https://github.com/cu-data-engineering-s15/get_tweets
 
 #### Contracts
 
+__Sample Call__
+
+ruby get_tweets.rb --props=/home/user/oauth.properties badastronomer
+
 Statically-typed language - (like java) uses interfaces
 
 Dynamically-typed language - (like ruby) improvise with method
