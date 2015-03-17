@@ -596,22 +596,109 @@ __Install MongoDB on Windows__
 Go to: https://www.mongodb.org/downloads
 
 
+## Student Lectures
+
+### Solr
+
+__Lucene__
+
+Powerful search engine written in Java
+
+Used in Solr
+
+__Solr__
+
+search server built on top of Apache Lucene that provides array of features
+
+Searches indexed documents
+
+Each document has ID and term list
+
+Has list of documents for each term
+
+Identifies each document by ID and returns
+
+__Sunspot__
+
+Gem for Ruby on Rails
+
+Bundled version of Solr
+
+__Pitfalls__
+
+Issues with Solr and Rake
+
+Starting server with Solr - different ports
+
+__Conclusion__
+
+Solr is a good way to get search functionality for DB
+
+Fash, reliable, fantastic features like pagination and indexing
 
 
+### Redis
+
+key value store
+
+__Basics__
+
+not a database replacement
+
+all keys and final values are strings
+
+__Users__
+
+Github, stackoverflow, twitter, etc.
+
+__Optional Features__
+
+Persistence, replication, clustering, server-side scripting
+
+__Special Commands__
+
+Incr, Decr, etc.
+
+__Cloud Providers__
+
+AWS, Morpheous, etc.
+
+__Lists__
+
+Blocking operations provided
+
+__Sorted Set__
+
+Don't have to sort each time set is presented
+
+__Bitmaps__
+
+constant time set/get methods
 
 
+### Kafka
 
+work with streaming data (ie. gathering tweets about Kanye on Twitter)
 
+Bottleneck created
 
+keeps all messages for u to N days 
 
+written in Scala
 
+named after Franz Kafka
 
+__Alternatives__
 
+RabbitMQ, A Database, Redis, etc.
 
+__Example Architecture__
 
+detecting civil unrest
 
+Interaction of Kafka with Spark, Express,js, MongoDB, AngularJS
 
-
+Zookeeper - allows for greater coordination in machines
 
 
 
