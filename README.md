@@ -701,8 +701,44 @@ Interaction of Kafka with Spark, Express,js, MongoDB, AngularJS
 Zookeeper - allows for greater coordination in machines
 
 
+### Neo4J
+
+Graph-based database, NoSQL Graph Database
+
+__Graph Database__
+
+Stores data as nodes and relationships
+
+Cheap to traverse along relationships
+
+Nodes represent entities
+
+Edges show relationships
+
+No constraints on data
+
+Cannot shard subgraphs
 
 
+### Apache HBase
+
+Hadoop database - open source distributed column-oriented database
+
+Serves tables with billions of rows and miilions of columns
+
+Built on top of Hadoop File System
+
+__Why HBase?__
+
+HBase leverages distributed data storage provided by HDFS
+
+HBase provides low latency access to single rows from billions of records
+
+__HBase Data Model__
+
+Stored in tables
+
+Each cell value has timestamp
 
 
 
