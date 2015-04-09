@@ -741,6 +741,22 @@ Stored in tables
 Each cell value has timestamp
 
 
+### Hadoop
+
+Hadoop is an open-source software framework for storing and processing big data in a distributed fashion on large clusters of commodity hardware
+
+__Map, Reduce, MapReduce__
+
+Functions to transform data 
+
+
+### Spark
+
+Open source data analytics cluster computing framework
+
+Real time vs interactive vs batch processing
+
+
 
 
 
