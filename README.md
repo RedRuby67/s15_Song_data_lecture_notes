@@ -756,7 +756,19 @@ Open source data analytics cluster computing framework
 
 Real time vs interactive vs batch processing
 
+### React
 
+Open Source
+
+Helps subdivide UI into small components
+
+Maintains virtual DOM
+
+Mix and match custom components with HTML
+
+One-way state binding
+
+Can only return single node
 
 
 
