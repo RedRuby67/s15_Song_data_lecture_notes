@@ -771,6 +771,35 @@ One-way state binding
 Can only return single node
 
 
+### Google Cloud Platform
+
+Google app engine
+
+Support for Python, Java, PHP, Go
+
+Virtual Machines: Standard, high CPU, high memory
+
+MySQL databases in the cloud
+
+Users: Snapchat, Coca-cola, etc.
+
+### Capistrano
+
+Automating Server Development
+
+Makes it easier to get up and running on a new server
+
+Allows users to work from local versions
+
+Simple - uses SSH to connect to machine and runs commands from terminal
+
+
+
+
+
+
+
+
 
 
 
