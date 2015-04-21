@@ -794,7 +794,26 @@ Allows users to work from local versions
 Simple - uses SSH to connect to machine and runs commands from terminal
 
 
+### Turf
 
+Advanced Geo-spacial
+
+GeoJSON + Turf + Mapping = Infographics
+
+format to encode geographical data structures
+
+
+### JavaScript InfoVis Toolkit
+
+Library to create interactive data visualizations for the web
+
+### Flask
+
+Microframework
+
+Based on Werkzeug WSGI toolkit and Jinja2 template engine
+
+Powered by SQLite
 
 
 
