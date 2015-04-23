@@ -815,6 +815,54 @@ Based on Werkzeug WSGI toolkit and Jinja2 template engine
 
 Powered by SQLite
 
+### D3 Data Driven Documents
+
+JavaScript library for manipulating documents based on data
+
+Data organized at top of architecture
+
+Similar to CSS in select
+
+### Leaflet
+
+Layers, MultiPlatform, GIS, interactive
+
+Map Example
+
+### Vega
+
+Visuaization Grammar built on top of D3.js
+
+Enable fast, customizable design
+
+Make reusable-sharable visualizations
+
+Tabular data model
+
+Axes (lines, tickes, labels) and Legends (colors, shapes, sizes)
+
+Marks - basic visual building block for visualization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
