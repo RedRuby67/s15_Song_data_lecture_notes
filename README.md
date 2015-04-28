@@ -843,6 +843,50 @@ Axes (lines, tickes, labels) and Legends (colors, shapes, sizes)
 
 Marks - basic visual building block for visualization
 
+### Titan
+
+Graph database
+
+Uses Languages Gremlin and SPARQL
+
+### Amazon Web Services
+
+Simple way to work with services over the internet
+
+Cloud computing
+
+Reliable, scalable, low-latency, easy to use, inexpensive
+
+__Networking__
+
+Amazon Rout 53
+
+VPC
+
+Amazon DirectConnect
+
+__Storage__
+
+S3
+
+EBS
+
+Glacier
+
+__Database__
+
+DynamoDB
+
+ElastiCache
+
+RDS
+
+RedShift
+
+
+
+
+
 
 
 
